@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Gallery.css';
 import astronaut1 from "../../shared/assets/astro1.jpg"
 import astronaut2 from "../../shared/assets/astro2.jpeg"
 import astronaut3 from "../../shared/assets/astro3.jpeg"
