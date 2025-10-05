@@ -1,0 +1,52 @@
+.footerContain {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  width: 100vw;
+  height: 220px;
+  backdrop-filter: blur(30px);
+}
+
+.topFooterContent {
+  display: flex;
+  gap: 655px;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.footerList {
+  display: flex;
+  gap: 45px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+}
+
+.lowerFooterContent {
+  display: flex;
+  gap: 730px;
+}
+
+.lowerFooterContent {
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.networks {
+  display: flex;
+  gap: 15px;
+}
+
+.networks img:hover {
+  cursor: pointer;
+}
+
+.lightLogo img {
+  width: 70px;
+  height: 70px;
+}

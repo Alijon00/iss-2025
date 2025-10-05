@@ -1,0 +1,245 @@
+.about-container {
+  min-height: 100vh;
+  background: transparent;
+  color: yellow;
+  padding-top: 80px;
+}
+
+.about-section {
+  padding: 80px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 48px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.section-content {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-section {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* AboutHeader Styles */
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 48px;
+  opacity: 0.8;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.stat {
+  text-align: center;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat h3 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: yellow;
+}
+
+/* MissionVision Styles */
+.mission-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 32px;
+}
+
+.mission-card {
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mission-card h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: yellow;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.timeline-year {
+  flex: 0 0 100px;
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+}
+
+.timeline-content {
+  flex: 1;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin: 0 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Achievements Styles */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.achievement-card {
+  padding: 32px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+}
+
+.achievement-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.achievement-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: yellow;
+}
+
+/* Partners Styles */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.partner-card {
+  padding: 24px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.partner-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: yellow;
+}
+
+.partner-card .country {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.partner-card .role {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+/* Future Plans Styles */
+.future-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.future-plan {
+  padding: 24px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.future-plan h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: yellow;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 48px 16px;
+  }
+  
+  .about-section h2 {
+    font-size: 32px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .mission-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline::before {
+    left: 30px;
+  }
+  
+  .timeline-item {
+    flex-direction: row !important;
+    text-align: left !important;
+  }
+  
+  .timeline-year {
+    flex: 0 0 80px;
+  }
+}

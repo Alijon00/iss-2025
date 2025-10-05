@@ -1,0 +1,65 @@
+/* Общие стили */
+.btn {
+  text-align: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+/* Размеры */
+
+.small {
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.medium {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.average {
+  width: 140px;
+  height: 60px;
+  font-size: 23px;
+}
+
+.large {
+  width: 180px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.huge {
+  width: 1060px;
+  height: 60px;
+  font-size: 20px;
+}
+
+/* Цвета */
+.primary {
+  background-color: transparent;
+  border: 2px solid yellow;
+  color: yellow;
+}
+
+.secondary {
+  background-color: yellow;
+  border: transparent;
+  color: black;
+}
+
+.tertiary {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: yellow;
+  color: black;
+  border: transparent;
+  cursor: pointer;
+}
