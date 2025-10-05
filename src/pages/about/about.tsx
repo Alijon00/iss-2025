@@ -1,5 +1,5 @@
 import React from "react";
-import './gallery.css';
+import './about.css';
 import { AboutHeader } from "./aboutHeader/aboutHeader";
 import { MissionVision } from "./missionVision/missionVision";
 import { Timeline } from "./timeLine/timeLine";
